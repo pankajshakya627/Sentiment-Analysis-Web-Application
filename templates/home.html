@@ -1,0 +1,33 @@
+{% extends "basic.html" %}
+{% set active_page = 'home' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+  
+</body>
+    <div>
+        <h1 class="title">Twitter Sentiment Analysis Tool</h1>
+
+    <form action="{{url_for('sentiment_analysis')}}" method="post" name="search_query">
+      <div class="field">
+        <label for="title" class="label">Search for Company Twitter Handle<br>[Type Exact Company Handle] <br>[Case Sensitive Field]<br>👇</label>
+        <div class="control">
+          <input type="text" name="search_query" class="input" required="required"/>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="n_tweets" class="label">Number of tweets</label>
+        <div class="control">
+          <input type="number" name="n_tweets" min="1" max="2000" class="input"/>
+        </div>
+      </div>
+
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="btn btn-primary">Search</button>
+          
+        </div>
+      </div>
+    </form>
+    </div>
+{% endblock %}

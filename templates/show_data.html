@@ -1,0 +1,12 @@
+{% extends "basic.html" %}
+{% set active_page = 'show_data' %}
+{% block title %}Showing tweets{% endblock %}
+{% block content %}
+    
+    <h2> SENTIMENT OF TWEETS</h2>
+    {% for k,v in tweets %}
+        <h1 > <em>Number of  {{k}} tweets are {{v}} </em> </h1>  
+    {% endfor %}
+
+
+{% endblock %}

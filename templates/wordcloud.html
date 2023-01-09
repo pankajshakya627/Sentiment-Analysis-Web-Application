@@ -1,0 +1,12 @@
+{% extends "basic.html" %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+{% block title %}Wordcloud{% endblock %}
+{% block content %}  
+    
+   <img src="{{ url_for('static', filename='uploadFiles/wordcloud.png') }}" class="center" >
+    <h2>Wordcloud</h2>
+{% endblock %}
+{% block script %}
+  
+{% endblock %}

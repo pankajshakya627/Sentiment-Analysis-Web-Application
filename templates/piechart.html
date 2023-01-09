@@ -1,0 +1,11 @@
+{% extends "basic.html" %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+{% block title %}Pie Chart{% endblock %}
+{% block content %}  
+    <img src="{{ url_for('static', filename='uploadFiles/piechart.png') }}" class="center">
+    <h2>Pie Chart</h2>
+{% endblock %}
+{% block script %}
+  
+{% endblock %}
